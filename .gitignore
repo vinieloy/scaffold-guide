@@ -242,6 +242,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+.idea/
 
 # dependências e pastas geradas via build e gulp
 dist/
