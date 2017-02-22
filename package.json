@@ -1,0 +1,12 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "Descrição",
+  "main": "index.js",
+  "author": "Celular Direto",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
