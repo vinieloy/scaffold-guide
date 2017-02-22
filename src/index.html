@@ -6,63 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <base href="/">
     <link rel="shortcut icon" href="/imgs/favicon.png">
+
     <!-- build:css css/style.min.css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/bower_components/angular-carousel/dist/angular-carousel.min.css">
-    <link rel="stylesheet" href="/node_modules/@celulardireto/faq/dist/style.css">
-    <link rel="stylesheet" href="/node_modules/@celulardireto/search-cep/dist/style.css">
-    <link rel="stylesheet" href="/node_modules/@celulardireto/price/dist/style.css">
-    <link rel="stylesheet" href="/node_modules/@celulardireto/dados-pessoais/dist/style.css">
-    <link rel="stylesheet" href="/node_modules/@celulardireto/error-message/dist/style.css">
-    <link rel="stylesheet" href="/css/style.css">
     <!-- endbuild -->
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','COLOQUE O ID DO GTM AQUI, FAVOR NÃO ESQUECER');</script>
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'COLOQUE O ID DO GTM AQUI, FAVOR NÃO ESQUECER');</script>
     <!-- End Google Tag Manager -->
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=COLOQUE O ID DO GTM AQUI, FAVOR NÃO ESQUECER"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=COLOQUE O ID DO GTM AQUI, FAVOR NÃO ESQUECER"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 </head>
-<body ng-app="application">
-<div class="modal__container">
-    <faq></faq>
-    <div id="spinner-content" us-spinner spinner-key="spinner-content"></div>
-    <div ui-view="conteudo" class="modal-body modal__body container"></div>
-    <div class="modal__footer"></div>
-</div>
+<body>
+<div data-ng-app="application"></div>
 
 <!-- build:js js/scripts.min.js -->
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/angular/angular.js"></script>
-<script src="/bower_components/angular-carousel/dist/angular-carousel.js"></script>
-<script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="/bower_components/angular-animate/angular-animate.js"></script>
-<script src="/bower_components/ngstorage/ngStorage.js"></script>
-<script src="/bower_components/angular-touch/angular-touch.js"></script>
-<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="/bower_components/spin.js/spin.js"></script>
-<script src="/bower_components/angular-spinner/angular-spinner.js"></script>
-<script src="/bower_components/angular-input-masks/angular-input-masks-standalone.js"></script>
-<script src="/bower_components/angulartics/dist/angulartics.min.js"></script>
-<script src="/bower_components/angulartics-google-tag-manager/dist/angulartics-google-tag-manager.min.js"></script>
-<script src="/bower_components/ngLocale/angular-locale_pt-br.js"></script>
-<script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
-<script src="/node_modules/@celulardireto/faq/dist/faq.component.js"></script>
-<script src="/node_modules/@celulardireto/search-cep/dist/search-cep.component.js"></script>
-<script src="/node_modules/@celulardireto/name-plans/dist/name-plans.component.js"></script>
-<script src="/node_modules/@celulardireto/price/dist/price.component.js"></script>
-<script src="/node_modules/@celulardireto/dados-pessoais/dist/dados.pessoais.component.js"></script>
-<script src="/node_modules/@celulardireto/cd-directives/dist/cd.directives.js"></script>
-<script src="/node_modules/@celulardireto/error-message/dist/error-message.component.js"></script>
-<script src="/node_modules/angular-format-masks/dist/format-masks.component.js"></script>
 <!-- endbuild -->
 </body>
 </html>
